@@ -8,6 +8,7 @@ body {
 }
 
 .container {
+    margin-left:-15px;
     display: grid;
     grid-auto-columns: auto;
     grid-auto-rows: minmax(15vh, auto);
@@ -73,8 +74,8 @@ body {
 }
 
 .mainWrap img {
-    width: 91vw;
-    opacity: 1;
+    width: 100vw;
+    opacity: .5;
 }
 
 .footerWrap {
@@ -131,7 +132,7 @@ br {
 @keyframes refractorAn {
     50% {
         opacity: 0.5;
-        fill: rgba(110, 20, 20, 0.671);
+        fill: rgb(128, 143, 226);
     }
 }
 
@@ -165,7 +166,8 @@ br {
     }
 }
 
-.footerWrap {
+.footerWrap { 
+    margin-top:15vh;
     padding: 10vw;
 }
 .footerWrap h4{
@@ -181,6 +183,7 @@ color: #861142;}
 }
 
 .wrapFootBot {
+    margin-top: 8vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -189,21 +192,34 @@ color: #861142;}
 
 .lateImage img{
   width: 70%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+
 
 }
 .latePost img{
   width: 100%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 
 }
 
 
 .lateNew img{
   width: 70%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 
 
 }
 .lateApp img{
   width: 60%;
+ margin-top: 2vh;
+  margin-bottom: 2vh;
+
+}
 
 
+.headMoon{
+    width: 15vw;
 }
