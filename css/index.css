@@ -3,7 +3,7 @@ body {
     padding: 0px;
     font-family: "Nunito", sans-serif;
     background-image: url(../photos/bavkground/background.png);
-    background-color: #575555;
+    background-color: rgb(39, 39, 39);
     background-size: contain;
 }
 
@@ -97,7 +97,7 @@ br {
 /* svgs' */
 
 .animationCategories {
-    opacity: .6;
+    opacity: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -136,7 +136,7 @@ br {
 }
 
 #ellipse1603 {
-    animation: moonAn 10s linear 5s infinite;
+    animation: moonAn 10s linear 1s infinite;
     transform-origin: 125px;
 }
 
@@ -169,7 +169,7 @@ br {
     padding: 10vw;
 }
 .footerWrap h4{
-color: #383838;}
+color: #861142;}
 .footerWrap p{
   color: #9e9e9e;}
 

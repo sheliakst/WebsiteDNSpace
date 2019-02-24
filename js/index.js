@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  AOS.init();
 
   $(window).scroll(function() {
     let scroll = $(this).scrollTop();
@@ -15,4 +14,5 @@ $(document).ready(function() {
 
     $("#mySidenav").css("width", "0");
   });
+
 });
