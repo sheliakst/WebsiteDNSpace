@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: "Nunito", sans-serif;
+  background-image: url(../photos/bavkground/background.png);
+  background-color: #3f3f3f;
+  background-size: contain;
+}
+
+.container {
+  margin: 1vw;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: minmax(15vh, auto);
+  grid-template-areas: " navWrap" "introWrap" "mainWrap" "footerWrap";
+  grid-gap: 1vh;
+  color: rgb(214, 216, 216);
+  text-align: center;
+}
+
+.navWrap {
+  grid-area: navWrap;
+  font-size: 1.8rem;
+}
+
+.navWrapContain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.navText p {
+  margin-top: 2vh;
+}
+
+.navText span {
+  font-size: 0.6rem;
+  margin-left: 10vw;
+  margin-top: -10vw;
+}
+
+.navicon img {
+  margin-top: 3vh;
+  width: 40px;
+  margin-left: 2vw;
+}
+
+.introWrap {
+  grid-area: introWrap;
+  margin-top: 15vh;
+}
+
+.mainWrap {
+  grid-area: mainWrap;
+  margin-top: 15vh;
+}
+
+.mainWrap img {
+  width: 92vw;
+  opacity: 0.6;
+}
+
+.footerWrap {
+  margin-top: 5vh;
+
+  grid-area: footerWrap;
+}
+
+br {
+  display: block;
+  content: "";
+  margin-top: -2vh;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    display: none;
+  }
+}
+
+/* svgs' */
+
+.animationCategories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 10vh 9vw 0 9vw;
+} /* 
+.animationCategories svg {
+  border: solid 3px rgba(128, 128, 128, 0.123);
+  border-radius: 12px;
+  padding: 10px;
+} */
+#appSvg {
+  width: 20vw;
+}
+
+#refractorSvg {
+  width: 20vw;
+}
+
+#refrect815 {
+  animation: refractorAn 5s linear 1s infinite;
+}
+
+#gallerySvg {
+  width: 20vw;
+}
+
+@keyframes refractorAn {
+  50% {
+    opacity: 0.5;
+    fill: rgb(49, 33, 33);
+  }
+}
+
+#ellipse1603 {
+  animation: moonAn 10s linear 5s infinite;
+  transform-origin: 125px;
+}
+
+@keyframes moonAn {
+  35% {
+    opacity: 0.1;
+  }
+  50% {
+    transform: rotate(-3deg);
+    fill: #613939;
+    opacity: 0;
+  }
+}
+
+#g1661 {
+  opacity: 0;
+  animation: moonAn2 10s linear 1s infinite;
+}
+
+@keyframes moonAn2 {
+  40% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.footerWrap {
+  padding: 10vw;
+}
+.wrapFootTop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.wrapFootBot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
