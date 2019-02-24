@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         let scroll = $(this).scrollTop();
-        $("#moon").css(({ WebkitTransform: 'rotate(' + scroll/50 + 'deg)'}))
+        $("#moon").css(({ WebkitTransform: 'rotate(' + scroll/30 + 'deg)'}))
 
     });
 $(".navicon").on("click",function(){
