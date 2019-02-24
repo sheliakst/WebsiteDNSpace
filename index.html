@@ -22,12 +22,38 @@
       media="screen"
       href="./css/index.css"
     />
-    <script src="./"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/navbar.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+
+    <script src="./js/parallax.js"></script>
   </head>
 
   <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="#" class="closebtn">&times;</a>
+      <a href="#">Home </a>
+      <a href="#">Gallery</a>
+      <a href="#">Applications</a>
+      <a href="#">Projects</a>
+      <a href="#">About</a>
+      <span class="socialNav">
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </span>
+    </div>
+
     <div class="container">
       <div class="navWrap">
+        <div class="moonBack">
+          <img src="./photos/svg/moon.svg" id="moon" alt="moon" />
+        </div>
         <div class="navWrapContain">
           <div class="navicon">
             <img src="./photos/bavkground/navicon.png" alt="navIcon" />
@@ -48,7 +74,7 @@
       </div>
       <div class="mainWrap">
         <img
-          src="./photos/astrophotography/M31_Andromeda_Galaxy.png"
+          src="./photos/astrophotography/Ic_1396___The_Elephant_Trunk_Nebula____widefield_.png"
           alt="m31"
         />
 
@@ -229,25 +255,39 @@
           </svg>
         </div>
       </div>
+
       <div class="footerWrap">
         <div class="wrapFootTop">
           <div class="lateImage">
-            <h5>Latest Image</h5>
-            <p>Nam commodo consequat gravida. Morbi vel dignissim eros.</p>
+            <h4>Latest Image</h4>
+            <p>
+              Nam commodo consequat gravida.
+              <img
+                src="./photos/astrophotography/Ldn1235___Vdb149__vdb150.jpg"
+                alt="VDB150"
+              />
+              Morbi vel dignissim eros.
+            </p>
           </div>
           <div class="latePost">
-            <h5>Post</h5>
-            <p>Nam commodo consequat gravida. Morbi vel dignissim eros.</p>
+            <h4>Post</h4>
+            <p>Nam commodo consequat gravida. Morbi vel dignissim eros.
+              <img src="./photos/Untitled-1.jpg" alt="">
+            </p>
           </div>
         </div>
         <div class="wrapFootBot">
           <div class="lateNew">
-            <h5>News</h5>
-            <p>Nam commodo consequat gravida. Morbi vel dignissim eros.</p>
+            <h4>News</h4>
+            <p>Nam commodo consequat gravida. Morbi vel dignissim eros. <img src="./photos/nasa.jpg" alt="">
+
+            </p>
           </div>
           <div class="lateApp">
-            <h5>Apps</h5>
-            <p>Nam commodo consequat gravida. Morbi vel dignissim eros.</p>
+            <h4>Apps</h4>
+            <p>Nam commodo consequat gravida. 
+             
+             <img src="./photos/google.jpg" alt=""> Morbi vel dignissim eros.</p>
           </div>
         </div>
       </div>
