@@ -1,36 +1,129 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>DarkNightSpace</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css">
-    <script src="./"></script>
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="../css/navbar.css"
+  />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/main.css"
+    />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="../css/apps.css"
+  />
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<body>
-    <div class="container">
-        <div class="navWrap">
-            <div class="navWrapContain">
-                <div class="navicon"><img src="./photos/bavkground/navicon.png" alt="navIcon"></div>
-                <div class="navText">
-                    <p>
-                        DarkNightSpace <br> <span>astrophotography by Stamatis Sarris</span>
-                    </p>
-                </div>
+    <script src="../js/index.js"></script>
+    <script src="../js/apps.js"></script>
 
-            </div>
+    <script src="../js/parallax.js"></script>
+  </head>
 
-
-        </div>
-        <div class="introWrap"></div>
-        <div class="mainWrap"></div>
-        <div class="footerWrap"></div>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="#" class="closebtn">&times;</a>
+      <a href="../index.html">Home </a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./apps.html">Applications</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./about.html">About</a>
+      <span class="socialNav">
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </span>
     </div>
-</body>
 
+    <div class="container">
+      <div class="navWrap">
+
+        <div class="navWrapContain">
+          <div class="navicon">
+            <img src="../photos/bavkground/navicon.png" alt="navIcon" />
+          </div>
+          <div class="navText" data-aos="fade-up" data-aos-duration="1000">
+            <p>
+              DarkNightSpace
+              <img src="../photos/svg/moon.svg" class="headMoon" id="moon" alt="moon" />
+              <br />
+              <span>astrophotography by Stamatis Sarris</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="introWrap" data-aos="fade-up" data-aos-duration="2000">
+        <p>
+         <h4>Applications</h4>
+        </p>
+
+
+        <div class="tableInput">
+            <table>
+                <tr>
+                    <th><button class= "filters">Filters</button></th>
+                    <th>
+                        <div class="dropdown">
+                            <button class="sort">Sort</button>
+                         <!--    <div class="sort-content">
+                                <a href="#">By ID</a>
+                                <a href="#">By Mag </a>
+                                <a href="#">By size</a>
+                            </div> -->
+                        </div>
+                    </th>
+                    <td><input type="text" placeholder="search"> <button>go</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="filterinfo">
+            <ul class="filterInBut">
+            </ul>
+        </div>
+
+        <div class="grid"></div>
+      </div>
+
+      <div class="mainWrap" data-aos="fade-up" data-aos-duration="2000">
+      </div>
+
+      <div class="footerWrap" data-aos="fade-up" data-aos-duration="3000">
+       
+      </div>
+      <footer class="page-footer" data-aos="fade-up" data-aos-duration="3000">
+        <div class="footer-copyright text-center py-5">
+          © 2018 Copyright: Stamatis Sarris
+        </div>
+      </footer>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

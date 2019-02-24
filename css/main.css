@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: "Nunito", sans-serif;
+    background-image: url(../photos/bavkground/background.png);
+    background-color: rgb(39, 39, 39);
+    background-size: contain;
+}
+
+.container {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-rows: minmax(15vh, auto);
+    grid-template-areas: " navWrap" "introWrap" "mainWrap" "footerWrap";
+    grid-gap: 1vh;
+    color: rgb(216, 216, 216);
+    text-align: center;
+}
+
+.navWrap {
+    grid-area: navWrap;
+    font-size: 1.8rem;
+}
+
+
+.moonBack {
+    position: fixed;
+    opacity: .5;
+    margin-left: 70vw;
+    z-index: -100;
+}
+
+#moon{
+  position: relative;
+}
+
+
+
+.navWrapContain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.navText p {
+    opacity: .6;
+    margin-top: 2vh;
+}
+
+.navText span {
+    font-size: 0.6rem;
+    margin-left: 10vw;
+    margin-top: -10vw;
+}
+
+.navicon img {
+    margin-top: 3vh;
+    width: 35px;
+    margin-left: 2vw;
+    opacity: .7;
+}
+
+.headMoon {
+    width: 15vw;
+}
+
+
+.introWrap {
+    grid-area: introWrap;
+}
+
+
+
+
+.mainWrap {
+    grid-area: mainWrap;
+}
+
+
+
+
+.footerWrap {
+    margin-top: 5vh;
+    grid-area: footerWrap;
+}
+
+
+br {
+    display: block;
+    content: "";
+    margin-top: -2vh;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+    body {
+        display: none;
+    }
+}
